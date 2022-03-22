@@ -1,11 +1,9 @@
-import Die  from "./components/Die";
+import RollDice from "./components/RollDice";
 
 function App() {
   return (
     <>
-      <Die face="five"/>
-      <Die face="two"/>
-
+      <RollDice />
     </>
   );
 }
