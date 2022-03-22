@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Die from '../components/Die';
+import "../styling/rolldice.css";
 
 export default function RollDice() {
     const nums = ["one", "two", "three", "four", "five", "six"]
@@ -17,9 +18,11 @@ export default function RollDice() {
 
     
   return (
-    <div>
-        <Die face={die1} />
-        <Die face={die2} />
+    <div className='rolldice'>
+        <div className='dice-container'>
+            <Die face={die1} />
+            <Die face={die2} />
+        </div>
         <button onClick={roll}>Roll Dice</button>
     </div>
   )
